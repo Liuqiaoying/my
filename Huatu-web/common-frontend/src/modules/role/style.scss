@@ -1,0 +1,28 @@
+.add-filter {
+    li {
+        > span {
+            display: inline-block; 
+            width: 16px;
+        }
+        line-height: 30px;
+        ul {
+            display: block;
+            margin-left: 21px;
+        }
+    }
+}
+
+.set-menu-dialog {
+    .menu-item {
+        margin-bottom: 10px;
+    }
+    .el-form {
+        p {
+            margin-bottom: 15px;
+            line-height: 1.2;
+            label {
+                color: $color-gray-light;
+            }
+        }
+    }
+}

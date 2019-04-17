@@ -1,0 +1,92 @@
+.node-tree {
+    margin: 10px 10px 10px 0;
+    width: 100%;
+    min-height: 600px;
+    // float: left;
+    > ul {
+        position: relative;
+        &:before {
+            content: '　';
+            top: 10px;
+            bottom: 0;
+            position: absolute;
+            border-left: 1px dashed $brand;
+        }
+
+    }
+    ul {
+        li {
+            list-style: none;
+            position: relative;
+            &::before {
+                content: '　';
+                height: 1px;
+                overflow: hidden;
+                position: absolute;
+                top: 10px;
+                width: 40px;
+                transform: translateY(-50%);
+                border-top: 1px dashed $brand;
+            }
+        }
+        .item  {
+            height: 16px;
+            margin-bottom: 10px;
+            padding: 5px 10px 0 50px;
+            > span {
+                vertical-align: middle;
+                &:first-of-type {
+                    max-width: 260px;
+                    display: inline-block;
+                    @extend %text-overflow;
+                }
+            }
+            .operate {
+                visibility: hidden;
+                margin-left: 20px;
+            }
+            &:hover {
+                .operate {
+                    visibility: visible;
+                }
+            }
+            .icon {
+                font-size: 16px;
+                color: $brand;
+                margin-right: 10px;
+                cursor: pointer;
+                &:hover {
+                    color: $link-hover-color;
+                }
+            }
+            .icon-bt-down,
+            .icon-bt-up {
+                color: $brand;
+                &:hover {
+                   color: $link-hover-color;
+                }
+            }
+            .left-triangle {
+                display: inline-block;
+                position: relative;
+                transform: rotate(0deg);
+                transition: transform .3s ease-in-out;
+                border-left: 6px solid $brand;
+                border-top: 5px solid transparent;
+                border-right: 6px solid transparent;
+                border-bottom: 5px solid transparent;
+            }
+            &.active {
+                color: $brand;
+                .left-triangle {
+                    border-left: 6px solid $brand;
+                }
+            }
+            &.expanded {
+                .left-triangle {
+                    transform: rotate(90deg);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,160 @@
+// colors used across the project
+$color-gray: #666;
+$color-gray-dark: #333;
+$color-gray-light: #999;
+
+$color-white: #fff;
+$color-alabaster: #FAFAFA;
+
+// $brand: $brand;
+$color-blue: #1890FF;
+$brand-light:lighten($brand, 20);
+$color-blue-light: lighten($color-blue, 20);
+$color-blue-lighter: lighten($color-blue, 40);
+$color-blue-dark: darken($color-blue, 40);
+
+$color-orange: #F7B221;
+$color-yellow: #FACC14;
+$color-red: #F5222D;
+$color-red-light: #FF6770;
+$color-green: #52C41A;
+$color-grey: #bfbfbf;
+
+$color-success: $color-green;
+$color-warning: $color-yellow;
+$color-danger: $color-red;
+
+// background for <body>
+$body-bg-color: #f2f2f2;
+
+// background for block elements
+$area-bg-color: #f7f7f7;
+
+// text colors
+$text-color-base: #595959;
+$text-color-light: #8c8c8c;
+$text-color-dark: #262626;
+$text-color-disable: #dadada;
+$text-color-placeholder: $text-color-disable;
+
+
+// link colors
+$link-color: $brand;
+$link-hover-color: $brand-light;
+
+// icon color
+$icon-color: #bfcbd9;
+
+// Border base
+$border-color-base: #e6e6e6;
+$border-radius-base: 4px;
+
+
+// Disable base
+$disable-border-color: #d1dbe5;
+$disable-bg-color: #eef1f6;
+$disable-text-color: #bfcbd9;
+
+
+// Font
+$font-family: PingFangSC-Regular,"Hiragino Sans GB","Helvetica Neue","微软雅黑","Microsoft Yahei",Helvetica,Arial,sans-serif;
+
+$font-size-base: 14px;
+$font-size-small: 12px;
+$font-size-large: 15px;
+$font-size-larger: 18px;
+
+
+// Buttons
+$btn-padding-base: 7px 15px;
+$btn-border-radius-base: 25px;
+
+$btn-default-text-color: $text-color-dark;
+$btn-default-bg-color: $color-white;
+$btn-default-border-color: #ddd;
+$btn-default-hover-text-color: $brand;
+$btn-default-hover-border-color: $brand;
+
+$btn-plain-primary-text-color: $brand;
+$btn-plain-primary-bg-color: $color-white;
+$btn-plain-primary-border-color: $brand;
+$btn-plain-primary-hover-text-color: $brand-light;
+$btn-plain-primary-hover-border-color: $brand-light;
+
+$btn-primary-text-color: $color-white;
+$btn-primary-bg-color: $brand;
+$btn-primary-border-color: $brand;
+$btn-primary-hover-bg-color: $brand-light;
+$btn-primary-hover-border-color: $brand-light;
+
+$btn-disable-text-color: $disable-text-color;
+$btn-disable-bg-color: $disable-bg-color;
+$btn-disable-border-color: $disable-border-color;
+
+
+// Table
+$table-text-color: $text-color-dark;
+$table-font-size: $font-size-base;
+$table-cell-padding: 0 9px;
+$table-header-bg-color: #fafafa;
+$table-border-color: #dfe6ec;
+
+$table-row-hover-bg-color: $table-header-bg-color;
+$table-row-active-bg-color: #edf7ff;
+
+
+// Input
+$input-border-color-base: #ddd;
+$input-border-color-dark: #d9d9d9;
+$input-border-radius-base: 25px;
+
+$input-bg-color: $color-white;
+$input-text-color: $text-color-base;
+$input-placeholder-text-color: $text-color-placeholder;
+
+$input-disable-bg-color: $disable-bg-color;
+$input-disable-border-color: $disable-border-color;
+$input-disable-text-color: $disable-text-color;
+
+
+// Tags
+$tag-default-text-color: $text-color-base;
+$tag-default-bg-color: #f5f5f5;
+$tag-default-border-color: $tag-default-bg-color;
+
+$tag-warning-text-color: $color-warning;
+$tag-warning-bg-color: #fffaeb;
+$tag-warning-border-color: #ffe9a7;
+
+
+// Tabs
+$tab-text-color: $text-color-base;
+
+$tab-item-padding: 0 16px;
+$tab-item-active-text-color: $brand;
+$tab-item-active-border: 3px solid $brand;
+
+// Loading
+$loading-bg-color: rgba(255, 255, 255, .3);
+
+// Dialog
+$dialog-header-padding: 18px 30px;
+$dialog-header-bg-color: $area-bg-color;
+$dialog-content-padding: 20px 30px;
+$dialog-footer-padding: 10px 30px;
+
+// List
+$list-item-padding: 15px 30px;
+$list-item-padding-small: 10px 20px;
+$list-item-padding-large: 20px 30px;
+$list-item-hover-bg-color: $brand-light;
+
+// Message box
+$message-box-content-padding: 30px;
+$message-box-icon-font-size: 24px;
+
+// Message
+$message-padding: 18px 20px;
+
+// Mix-Component
+$mix-component-bg-color: #f5f5f5;

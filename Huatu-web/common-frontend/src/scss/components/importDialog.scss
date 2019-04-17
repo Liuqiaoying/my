@@ -1,0 +1,107 @@
+.import-dialog {
+    .el-upload__tip {
+        display: inline-block;
+        margin-left: 10px;
+    }
+    .el-step {
+        margin: 20px 0 30px 0;
+    }
+    .warning {
+        color: #F56C6C;
+        font-size: $font-size-small;
+    }
+    p {
+        color: $text-color-light;
+        line-height: 20px;
+    }
+    .upload-notice {
+        h2 {
+            margin-bottom: 10px;
+            font-size: 18px;
+            font-weight: normal;
+            color: $color-gray-dark;
+            a {
+                margin: 0 5px;
+            }
+        }
+        > li {
+            margin: 30px 0;
+            ol {
+                margin-left: 20px;
+                > li {
+                    list-style: decimal;
+                    color: $text-color-light;
+                }
+            }
+        }
+        .upload-body {
+            @include line-height($font-size-large);
+            @include clearfix();
+
+            > li,
+            > p {
+                margin-bottom: 5px;
+            }
+        }
+    }
+
+    .check-progress, .import-progress {
+        padding: 40px 0;
+        color: $text-color-light;
+        p {
+            line-height: 30px;
+        }
+        .el-progress-bar__innerText {
+            line-height: 28px;
+        }
+    }
+
+    .complete {
+        span {
+            @extend .vertical-middle;
+            margin: 0 3px;
+        }
+    }
+
+    .check-result, .complete {
+        color: $text-color-light;
+        padding-top: 20px;
+        >li {
+            text-align: center;
+            list-style: none;
+        }
+        .num {
+            text-align: left;
+        }
+        .sign {
+            margin-top: 40px;
+            text-align: center;
+            > span {
+                font-size: 100px;
+            }
+        }
+        .tip {
+            margin-top: 25px;
+            button {
+                margin-top: 10px;
+            }
+            .tip-fail {
+                padding-left: 5em;
+                p {
+                    width: 33em;
+                    text-align: left;
+                }
+            }
+            .tip-success {
+                text-align: center;
+            }
+        }
+        .text-blue {
+            color: $brand;
+        }
+    }
+    .text-gray {
+        color: $text-color-base;
+        font-weight: bold;
+    }
+}

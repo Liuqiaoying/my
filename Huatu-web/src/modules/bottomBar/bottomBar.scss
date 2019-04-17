@@ -1,0 +1,11 @@
+.bottom-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .select-style {
+        margin-right: 20px;
+    }
+    .search-course-button {
+        align-self: stretch;
+    }
+}

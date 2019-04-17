@@ -1,0 +1,42 @@
+.userlist-control-container {
+    height: 34px;
+    background: #F1F2F6;
+    margin-bottom: 8px;
+    .userlist-button {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        width: fit-content;
+        margin-left: 16px;
+        color: $brand;
+        .text {
+            margin-left: 5px;
+        }
+    }
+}
+
+.userlist-table-status-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-list {
+    .main-content-container {
+        padding-top: 0;
+    }
+}
+
+.add-btn {
+    color: $brand;
+    cursor:pointer;
+    text-align: right;
+    span,
+    .svg-icon {
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .svg-icon {
+        margin-right: 2px;
+    }
+}

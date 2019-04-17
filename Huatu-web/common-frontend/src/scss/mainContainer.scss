@@ -1,0 +1,102 @@
+.main {
+    box-sizing: border-box;
+    padding: 54px 0 0 180px;
+    min-width: 1260px;
+    > div.el-card:first-child {
+      margin-top: 20px;
+    }
+    &.hide-sidebar {
+        padding: 60px 0 0 64px;
+    }
+    .detail-wrap {
+        margin: 16px;
+        border-radius: 4px;
+        display: flex;
+        &-content {
+            flex: 1;
+            background: #fff;
+            border-radius: 4px;
+            padding: 21px 24px;         
+        }
+        aside {
+            width: 250px;
+            margin-left: 16px;
+            border-radius: 4px;
+        }
+    }
+    .detail-wrap {
+        margin: 16px;
+        border-radius: 4px;
+        display: flex;
+        > div {
+            flex: 1;
+            overflow: hidden;
+            .detail-wrap-top{
+                background: #fff;
+                border-radius: 4px;
+                padding: 16px 24px ;
+                margin-bottom:16px ;
+            }
+            .detail-wrap-main{
+                background: #fff;
+                border-radius: 4px;
+                padding: 21px 24px;
+            } 
+        } 
+        aside {
+            width: 250px;
+            margin-left: 16px;
+            border-radius: 4px;
+        }
+    }
+}
+
+.container-tab {
+    background: #fff;
+    margin-top: 2px;
+    .el-tabs__content {
+        display: none;
+    }
+}
+
+.main-container {
+    background: #FFFFFF;
+    box-shadow: 0 2px 4px 0 #DBDEE7;
+    border-radius: 4px;
+    margin:16px;
+    .title {
+        position: relative;
+        padding-left: 11px;
+        &::before {
+            content: '　';
+            height: 14px;
+            overflow: hidden;
+            position: absolute;
+            left: 0;
+            border-left: 3px solid $brand;
+        }
+    }
+    &-content {
+        padding: 10px 24px;
+    }
+    .add-btn {
+        &.el-button--primary.is-plain {
+            background: #fff;
+            border: 1px solid #DCDFE6;
+            color: $brand;
+            &:hover {
+                background: #fafafa;
+            }
+        }
+    }
+    $danger: #FF4F4D;
+    .el-button--danger {
+        background: $danger;
+        box-shadow: 0 0 14px 0 rgba(255,79,77,0.30);
+        border-radius: 100px;
+        &.is-disabled {
+            border-color: lighten($danger, 10);
+            background: lighten($danger, 10);
+        }
+    }
+}

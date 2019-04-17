@@ -1,0 +1,33 @@
+
+.node {
+    padding: 5px;
+    @extend %text-overflow;
+    .el-checkbox {
+        margin-right: 10px;
+    }
+    .left-triangle {
+        display: inline-block;
+        position: relative;
+        transform: rotate(0deg);
+        transition: transform .3s ease-in-out;
+        border-left: 6px solid $brand;
+        border-top: 5px solid transparent;
+        border-right: 6px solid transparent;
+        border-bottom: 5px solid transparent;
+    }
+    &.expanded {
+        .left-triangle {
+            transform: rotate(90deg);
+        }
+    }
+}
+.organization-filter-popver {
+    padding: 0;
+    overflow: hidden;
+}
+
+.organization-filter {
+    .el-input__inner {
+        @extend %clearfix;
+    }
+}

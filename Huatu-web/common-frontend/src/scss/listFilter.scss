@@ -1,0 +1,15 @@
+.list-filter {
+    .el-form-item__label {
+        margin-right: 5px;
+    }
+    .el-form-item {
+        margin-right: 20px;
+    }
+    .el-form-item--small.el-form-item {
+        margin-bottom: 10px;
+    }
+    .el-form-item--right{
+        float: right;
+        margin-right: 0;
+    }
+}

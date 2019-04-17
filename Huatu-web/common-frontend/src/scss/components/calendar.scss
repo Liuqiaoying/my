@@ -1,0 +1,112 @@
+.calendar {
+    background: #fff;
+    padding: 7px 0 10px 0;    
+    .week-nums {
+        padding: 0 20px;
+        margin-bottom: 10px;
+        @extend %clearfix;
+        > li {
+            box-sizing: border-box;
+            padding: 0;
+            float: left;
+            width: 37px;
+            font-size: 12px;
+            color: #595959;
+            text-align: center;
+        } 
+    }
+    .control-bar {
+        @extend %clearfix;
+        padding: 0 28px;
+        margin-bottom: 22px;
+        li {
+            line-height: 18px;
+            &:first-of-type {
+                float: left;
+            }
+            &:nth-of-type(2) {
+                float: right;
+            }
+            &:last-of-type {
+                text-align: center;
+            }
+            .svg-icon {
+                color: $brand;
+                cursor: pointer;
+                &:hover {
+                    color: $link-hover-color;
+                }
+            }
+        }
+    }
+    .unit-active {
+        background: #4E7CFF;
+        color: #fff;
+        box-shadow: 0 4px 6px 0 #B0C4FE; 
+    }
+    .units {
+        padding: 0 20px;
+        > li {
+            width: 37px;
+            height: 32px;
+            float: left;
+            line-height: 32px;
+            box-sizing: border-box;
+            text-align: center;
+            color: #ccc;
+            font-size: 14px;
+            .day {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+            }
+            div {
+                width: 32px;
+                position: relative;
+                background: transparent;
+                transition: background-color .3s;
+                border-radius: 50%;
+                cursor: pointer;
+                i {
+                    position: absolute;
+                    display: inline-block;
+                    background: #FF4F4D;
+                    right: -5px;
+                    top: -5px;
+                    height: 14px;
+                    line-height: 14px;
+                    min-width: 14px;
+                    box-sizing: border-box;
+                    padding: 0 5px;
+                    border-radius: 10px;
+                    color: #fff;
+                    font-size: 12px;
+                    font-style: normal;
+                }
+                &:hover {
+                    @extend .unit-active;
+                    i {
+                    //    display: none;
+                    }
+                }
+            }
+            .today-str {
+                position: absolute;
+                top: 10px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            &:nth-child(7n) {
+                border-right: 0
+            }
+            &.current-month-day {
+                color: $color-gray;
+            }
+            &.active {
+                div {
+                    @extend .unit-active;
+                }  
+            }
+        }
+    }
+}

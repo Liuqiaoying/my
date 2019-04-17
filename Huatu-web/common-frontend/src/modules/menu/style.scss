@@ -1,0 +1,25 @@
+.menu-config {
+    margin-top: 20px;
+}
+.add-menu {
+	ul {
+		margin: 0 0 0 30px;
+	}
+	.module {
+		margin-bottom: 5px;
+		.el-checkbox {
+			@extend %text-overflow;
+			vertical-align: middle;
+			max-width: 180px;
+		}
+	}
+	li {
+		list-style: none;
+		margin: 5px 0 5px 17px;
+		.el-label {
+			@extend %text-overflow;
+			max-width: 200px;
+			display: block;
+		}
+	}
+}

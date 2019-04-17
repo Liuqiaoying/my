@@ -1,0 +1,43 @@
+// dot status
+@import './_variables';
+
+.dot {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    left: 5px;
+    &:before {
+        position: absolute;
+        content: "";
+        left: -10px;
+        width: 6px;
+        height: 6px;
+        border-radius: 6px;
+    }
+    &.blue {
+        &:before {
+            background-color: $color-blue;
+        }
+    }
+    &.red {
+        &:before {
+            background-color: $color-red;
+        }
+    }
+    &.green {
+        &:before {
+            background-color: $color-green;
+        }
+    }
+    &.yellow {
+        &:before {
+            background-color: $color-orange;
+        }
+    }
+    &.grey {
+        &:before {
+            background-color: $color-grey;
+        }
+    }
+}

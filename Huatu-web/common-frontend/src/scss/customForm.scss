@@ -1,0 +1,432 @@
+// COLORS DEFINITION
+$primary: #1890FF;
+$main-red: #F5222D;
+$main-yellow: #FAB214;
+$main-green: #52C41A;
+$main-bgc: #F7F7F7;
+$text-emphasis: #333;
+$text-normal: #666;
+$border: #DCDFE6;
+$border-light: #E9E9E9;
+$main-yellow-lighter: lighten($main-yellow, 42%);
+// RESET
+.el-form-item--small.el-form-item {
+    margin-bottom: 24px;
+}
+
+.el-form-item.is-required .el-form-item__label:before {
+    color: $main-red;
+}
+
+// FORM SECTION
+.form-section {
+    .section-header {
+        padding: 9px 24px;
+        background-color: $main-bgc;
+        .section-title {
+            font-weight: 600;
+            font-size: 16px;
+            color: $text-emphasis;
+        }
+    }
+    .section-body {
+        padding: 20px 24px 32px;
+    }
+    .dashed-button {
+        margin-bottom: 24px;
+        width: 100%;
+        color: $primary;
+        border: 1px dashed $border;
+    }
+    .input-inline {
+        display: flex;
+    }
+    &.btn-group-section {
+        .el-button {
+            margin-right: 10px;
+        }
+    }
+}
+
+.form-subsection {
+    .subsection-title {
+        margin-bottom: 12px;
+        font-size: 16px;
+        font-weight: 600;
+        color: $text-emphasis;
+    }
+    .subsection-header {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 8px;
+        .subsection-title {
+            margin-bottom: 0;
+            line-height: 32px;
+            padding-left: 35px;
+        }
+        .actions {
+            display: flex;
+            align-items: center;
+        }
+    }
+}
+
+.form-tip {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 25px;
+    font-size: 12px;
+    line-height: 40px;
+    background-color: #fff;
+    border: 1px solid $main-yellow;
+    border-radius: 4px;
+    .content {
+        color: $main-yellow;
+        i {
+            font-style: normal;
+            color: #666;
+        }
+        span {
+            margin-right: 22px;
+        }
+    }
+    .info {
+        padding-right: 20px;
+        color: $main-yellow;
+    }
+}
+
+.form-info-table {
+    width: 100%;
+    border-collapse: collapse;
+    th,
+    td {
+        border: 1px solid $border;
+        text-align: center;
+    }
+    th {
+        padding: 8px 15px;
+        color: $text-emphasis;
+        font-weight: 500;
+        background-color: $main-bgc;
+    }
+    td {
+        padding: 6px 15px;
+        color: $text-normal;
+        line-height: 1.4
+    }
+}
+
+.form-info-table-tip {
+    display: flex;
+    padding: 12px 20px;
+    font-size: 12px;
+    line-height: 1.4;
+    .label {
+        flex-grow: 0;
+        flex-shrink: 0;
+        color: $text-emphasis;
+    }
+    .content {
+        color: $text-normal;
+    }
+}
+
+.form-info-table-tip+.form-info-table {
+    margin-top: 10px;
+}
+
+.form-info-pane {
+    margin-bottom: 32px;
+    border: 1px solid $border;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    .pane-header {
+        padding: 11px 24px;
+        border-bottom: 1px solid $border;
+        background-color: $main-bgc;
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+        .pane-title {
+            font-weight: 600;
+        }
+    }
+    .pane-body {
+        padding: 11px 24px 21px;
+        div.form-info-group:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+    }
+}
+
+.form-info-group {
+    padding-bottom: 17px;
+    margin-bottom: 11px;
+    border-bottom: 1px solid $border;
+    .form-info-group-name {
+        font-weight: 600;
+        margin-bottom: 12px;
+    }
+    .form-info-item {
+        margin-bottom: 12px;
+    }
+    &.compact {
+        .form-info-item {
+            margin-bottom: 3px;
+        }
+    }
+}
+
+.form-group-pane {
+    padding: 0 24px;
+    background-color: $main-bgc;
+    .form-group {
+        display: flex;
+        border-bottom: 1px dashed $border-light;
+    }
+    .form-group-main {
+        padding-top: 24px;
+        flex: 1 1 100%;
+    }
+    .form-group-side {
+        display: flex;
+        flex: 0 0 50px;
+        margin-left: 24px;
+        align-items: center;
+        justify-content: center;
+    }
+    .form-group-list {
+        .form-group:last-child {
+            margin-bottom: 0;
+            border-bottom: none;
+        }
+    }
+}
+
+// ICON RADIO
+.el-radio-group {
+    &.icon-radio-group {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.el-radio {
+    &.icon-radio {
+        display: flex;
+        margin: 0 17px 10px 0;
+        padding: 3px 4px;
+        width: 128px;
+        height: 46px;
+        .el-radio__label {
+            display: flex;
+            flex: 0 0 100%;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+            font-size: 16px;
+            font-weight: 600;
+            text-align: center;
+        }
+        .el-radio__input {
+            .el-radio__inner {
+                display: none;
+            }
+        }
+        &.is-checked {
+            position: relative;
+            &::before {
+                position: absolute;
+                content: "";
+                right: 0;
+                bottom: 0;
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 0 0 22px 22px;
+                border-color: transparent transparent $primary transparent;
+            }
+            &::after {
+                position: absolute;
+                display: block;
+                right: 3px;
+                bottom: 1px;
+                content: '';
+                width: 5px;
+                height: 11px;
+                border: solid #fff;
+                border-width: 0 2px 2px 0;
+                transform: rotate(45deg) scale(0.7, 0.7);
+            }
+        }
+        img {
+            width: 120px;
+            height: 40px;
+        }
+    }
+    &.icon-radio+&.icon-radio {
+        margin-left: 0;
+    }
+}
+
+// INFO ITEM
+.form-info-list {
+    display: flex;
+    flex-wrap: wrap;
+    .form-info-item {
+        flex: 0 0 33.33%;
+        &.full {
+            flex-basis: 100%;
+        }
+        &.half {
+            flex-basis: 50%;
+        }
+        &.fifth {
+            flex-basis: 20%;
+        }
+    }
+    *:not(:nth-child(3n+3)) {
+        .form-item-content {
+            padding-right: 15px;
+        }
+    }
+}
+
+.info-list {
+    display: flex;
+    flex-wrap: wrap;
+    .info-item {
+        display: flex;
+        margin: 0;
+        line-height: 22px;
+        padding-right: 32px;
+        .info-label {
+            flex-grow: 0;
+            flex-shrink: 0;
+            color: $text-emphasis;
+        }
+        .info-content {
+            color: $text-normal;
+        }
+    }
+}
+
+.info-body {
+    padding: 16px 24px;
+}
+
+.form-body {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.form-info-item {
+    display: flex;
+    margin-bottom: 16px;
+    line-height: 22px;
+    &.center {
+        align-items: center;
+    }
+    .form-item-label {
+        flex-grow: 0;
+        flex-shrink: 0;
+        color: $text-emphasis;
+    }
+    .form-item-content {
+        color: $text-normal;
+        word-break: break-all;
+        .payment-placeholder {
+            display: block;
+            width: 120px;
+            height: 40px;
+            border: 1px solid $primary;
+            border-radius: 4px;
+        }
+    }
+}
+
+.form-tag-list {
+    .el-tag {
+        margin-right: 8px;
+    }
+}
+
+// FORM INPUT NORMAL WIDTH
+// naming conventions follows
+// width => w
+.w50 {
+    width: 50px;
+    flex-basis: 50px;
+}
+.w60 {
+    width: 60px;
+    flex-basis: 60px;
+}
+
+.w70 {
+    width: 70px;
+    flex-basis: 70px;
+}
+
+.w80 {
+    width: 80px;
+    flex-basis: 80px;
+}
+
+.w130 {
+    width: 130px;
+    flex-basis: 130px;
+}
+
+.w160 {
+    width: 160px;
+    flex-basis: 160px;
+}
+
+.w240 {
+    width: 240px;
+    flex-basis: 240px;
+}
+
+.w300 {
+    width: 300px;
+    flex-basis: 300px;
+}
+
+// GAPS
+// naming conventions follows
+// gap => g, r => right
+.gr10 {
+    margin-right: 10px;
+}
+
+.gr15 {
+    margin-right: 15px;
+}
+
+.gr20 {
+    margin-right: 20px;
+}
+
+.gt5 {
+    margin-top: 15px;
+}
+
+// HELPER CLASS
+.desktop {
+    max-width: 1440px;
+}
+
+.laptop {
+    max-width: 1280px;
+}
+
+.form-item-middle {
+    line-height: 32px;
+}
+
+.emphasis {
+    color: $main-red;
+}

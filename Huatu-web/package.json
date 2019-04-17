@@ -1,0 +1,80 @@
+{
+  "name": "Huatu-web",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "dev": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "build:prod": "cross-env env=prod vue-cli-service build --modern",
+    "mock": "nodemon mock/server.js",
+    "mockdev": "npm run dev & npm run mock"
+  },
+  "pre-commit": [
+    "lint"
+  ],
+  "dependencies": {
+    "axios": "^0.18.0",
+    "cross-env": "^5.2.0",
+    "element-ui": "^2.2.2",
+    "js-cookie": "^2.2.0",
+    "raven-js": "^3.24.2",
+    "vue": "^2.5.17",
+    "vue-router": "^3.0.1",
+    "vuex": "^3.0.1"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.0.5",
+    "@vue/cli-plugin-eslint": "^3.0.5",
+    "@vue/cli-service": "^3.0.5",
+    "vue-template-compiler": "^2.5.17",
+    "babel-eslint": "^8.2.5",
+    "babel-polyfill": "^6.26.0",
+    "better-scroll": "^1.9.1",
+    "css-loader": "^0.28.11",
+    "eslint": "^4.19.1",
+    "eslint-config-alloy": "^1.4.2",
+    "eslint-loader": "^2.0.0",
+    "eslint-plugin-vue": "^3.14.0",
+    "express-delay": "^0.2.0",
+    "html-webpack-plugin": "^3.2.0",
+    "json-server": "^0.14.0",
+    "mockjs": "^1.0.1-beta3",
+    "node-sass": "^4.9.0",
+    "nodemon": "^1.17.5",
+    "postcss-import": "^11.1.0",
+    "postcss-url": "^7.3.2",
+    "pre-commit": "^1.2.2",
+    "sass-loader": "^7.0.3",
+    "style-loader": "^0.21.0",
+    "stylus-loader": "^3.0.2",
+    "vue-eslint-parser": "^3.0.0",
+    "vue-loader": "^15.2.4",
+    "vue-svg-icon": "^1.2.9"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "rules": {},
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
+}
