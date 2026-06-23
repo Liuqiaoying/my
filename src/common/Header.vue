@@ -13,6 +13,6 @@ import LanguageChange from './LanguageChange.vue'
 
 <style scoped lang="scss">
 .header {
-  height: 80px;
+  height: 60px;
 }
 </style>
