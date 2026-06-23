@@ -13,7 +13,7 @@ import zhCn from 'element-plus/es/locale/lang/zh-cn'
 import en from 'element-plus/es/locale/lang/en'
 import { useLanguageStore } from '@/stores/language'
 const languageStore = useLanguageStore()
-const locale = computed(() => (languageStore.language === 'zhCn' ? zhCn : en))
+const locale = computed(() => (languageStore.language === 'zh' ? zhCn : en))
 </script>
 
 <style lang="scss" scoped>

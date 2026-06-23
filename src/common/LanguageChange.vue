@@ -5,15 +5,20 @@
 
 <script setup lang="ts">
 import { ref, computed } from 'vue'
+import { useI18n } from 'vue-i18n'
 import { useLanguageStore } from '@/stores/language'
+
+const { locale } = useI18n()
 const languageStore = useLanguageStore()
 const language = computed(() => languageStore.language)
 
 function changeLanguage() {
-  if (language.value === 'zhCn') {
+  if (language.value === 'zh') {
     languageStore.setLanguage('en')
+    locale.value = 'en'
   } else {
-    languageStore.setLanguage('zhCn')
+    languageStore.setLanguage('zh')
+    locale.value = 'zh'
   }
   localStorage.setItem('language', language.value)
 }
