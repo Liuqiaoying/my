@@ -11,7 +11,7 @@ import { useLanguageStore } from '@/stores/language'
 const { locale } = useI18n()
 const languageStore = useLanguageStore()
 const language = computed(() => languageStore.language)
-
+const { t } = useI18n()
 function changeLanguage() {
   if (language.value === 'zh') {
     languageStore.setLanguage('en')
@@ -21,6 +21,7 @@ function changeLanguage() {
     locale.value = 'zh'
   }
   localStorage.setItem('language', language.value)
+  console.log('ts中使用======', t('welcome'))
 }
 </script>
 
