@@ -11,4 +11,8 @@ import DarkButton from './DarkButton.vue'
 import LanguageChange from './LanguageChange.vue'
 </script>
 
-<style scoped></style>
+<style scoped lang="scss">
+.header {
+  height: 80px;
+}
+</style>

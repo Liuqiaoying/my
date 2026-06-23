@@ -1,7 +1,12 @@
 <template>
   <el-config-provider :locale="locale">
-    <Header> </Header>
-    <RouterView />
+    <el-container>
+      <el-header><Header> </Header></el-header>
+      <el-container>
+        <el-aside width="200px">Aside</el-aside>
+        <el-main><RouterView></RouterView></el-main>
+      </el-container>
+    </el-container>
   </el-config-provider>
 </template>
 
@@ -13,7 +18,7 @@ import zhCn from 'element-plus/es/locale/lang/zh-cn'
 import en from 'element-plus/es/locale/lang/en'
 import { useLanguageStore } from '@/stores/language'
 const languageStore = useLanguageStore()
-const locale = computed(() => (languageStore.language === 'zh' ? zhCn : en))
+const locale = computed(() => (languageStore.language === 'zhCn' ? zhCn : en))
 </script>
 
 <style lang="scss" scoped>
