@@ -1,5 +1,7 @@
 <template>
-  <el-button type="primary" @click="toggleDark">{{ isDark ? '开灯' : '关灯' }}</el-button>
+  <el-button class="dark-button" type="primary" @click="toggleDark">{{
+    isDark ? '开灯' : '关灯'
+  }}</el-button>
 </template>
 
 <script setup lang="ts">
@@ -10,4 +12,8 @@ const toggleDark = () => {
 }
 </script>
 
-<style scoped></style>
+<style scoped>
+.dark-button {
+  margin-left: 16px;
+}
+</style>
