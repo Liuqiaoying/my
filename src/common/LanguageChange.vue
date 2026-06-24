@@ -1,6 +1,5 @@
 <template>
-  <el-button @click="changeLanguage">中/英文</el-button>
-  <div>{{ language }}</div>
+  <el-button @click="changeLanguage">{{ $t(language) }}</el-button>
 </template>
 
 <script setup lang="ts">

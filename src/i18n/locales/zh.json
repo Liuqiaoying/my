@@ -1,5 +1,7 @@
 {
   "welcome": "欢迎",
+  "zh": "简体中文",
+  "en": "英文",
   "app": {
     "title": "Vue 3 应用",
     "description": "这是一个多语言应用"
