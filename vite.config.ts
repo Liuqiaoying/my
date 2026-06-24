@@ -6,6 +6,7 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
 import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
+
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [
@@ -18,8 +19,6 @@ export default defineConfig({
       resolvers: [
         ElementPlusResolver({
           importStyle: 'sass',
-          // directives: true,
-          // version: "2.1.5",
         }),
       ],
     }),
@@ -34,6 +33,14 @@ export default defineConfig({
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url)),
+    },
+  },
+  build: {
+    rollupOptions: {
+      input: {
+        main: fileURLToPath(new URL('./index.html', import.meta.url)),
+        login: fileURLToPath(new URL('./login.html', import.meta.url)),
+      },
     },
   },
 })
