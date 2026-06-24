@@ -18,6 +18,7 @@
   "error": {
     "required": "この項目は必須です",
     "email": "有効なメールアドレスを入力してください",
+    "phone": "有効な電話番号を入力してください",
     "minLength": "{n} 文字以上で入力してください",
     "maxLength": "{n} 文字以内で入力してください"
   },
@@ -42,6 +43,19 @@
     "logoutSuccess": "ログアウトしました",
     "oldPassword": "旧パスワード",
     "newPassword": "新パスワード",
-    "passwordChanged": "パスワードを変更しました"
+    "passwordChanged": "パスワードを変更しました",
+    "userManage": "ユーザー管理",
+    "username": "ユーザー名",
+    "nickname": "ニックネーム",
+    "phone": "電話番号",
+    "actions": "操作",
+    "add": "新規追加",
+    "edit": "編集",
+    "delete": "削除",
+    "searchPlaceholder": "ユーザー名/ニックネーム/電話番号で検索",
+    "addSuccess": "追加しました",
+    "updateSuccess": "更新しました",
+    "deleteSuccess": "削除しました",
+    "deleteConfirm": "このユーザーを削除してもよろしいですか？"
   }
 }

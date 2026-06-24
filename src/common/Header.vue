@@ -12,21 +12,16 @@
 </template>
 
 <script setup lang="ts">
+import { useI18n } from 'vue-i18n'
 import DarkButton from './DarkButton.vue'
 import LanguageChange from './LanguageChange.vue'
 import UserDropdown from './UserDropdown.vue'
+
+const { t } = useI18n()
 const menuItems = [
   {
-    name: 'Home',
-    path: '/',
-  },
-  {
-    name: 'About',
-    path: '/about',
-  },
-  {
-    name: 'Contact',
-    path: '/contact',
+    name: t('user.userManage'),
+    path: '/users',
   },
 ]
 </script>

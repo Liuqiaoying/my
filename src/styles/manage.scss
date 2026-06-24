@@ -1,0 +1,16 @@
+// 管理页面统一变量
+:root {
+  --manage-page-padding: 16px;
+  --manage-card-padding: 16px;
+  --manage-card-gap: 16px;
+  --manage-border-radius: 4px;
+}
+
+// 通用工具类
+.manage-page {
+  .toolbar {
+    .el-input__wrapper {
+      box-shadow: 0 0 0 1px var(--el-border-color) inset;
+    }
+  }
+}
