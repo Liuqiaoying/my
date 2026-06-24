@@ -12,13 +12,9 @@
 
 <script setup lang="ts">
 import { RouterView } from 'vue-router'
-import { computed, ref } from 'vue'
 import Header from './common/Header.vue'
-import zhCn from 'element-plus/es/locale/lang/zh-cn'
-import en from 'element-plus/es/locale/lang/en'
-import { useLanguageStore } from '@/stores/language'
-const languageStore = useLanguageStore()
-const locale = computed(() => (languageStore.language === 'zhCn' ? zhCn : en))
+import { useEpLocale } from '@/composables/useEpLocale'
+const locale = useEpLocale()
 </script>
 
 <style lang="scss" scoped>
