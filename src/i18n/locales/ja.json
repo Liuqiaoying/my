@@ -1,0 +1,38 @@
+{
+  "welcome": "ようこそ",
+  "zh": "中国語",
+  "en": "英語",
+  "ja": "日本語",
+  "ko": "韓国語",
+  "app": {
+    "title": "Vue 3 アプリ",
+    "description": "多言語アプリケーション"
+  },
+  "login": {
+    "title": "ユーザーログイン",
+    "username": "ユーザー名",
+    "password": "パスワード",
+    "submit": "ログイン",
+    "forgot": "パスワードをお忘れですか？"
+  },
+  "error": {
+    "required": "この項目は必須です",
+    "email": "有効なメールアドレスを入力してください",
+    "minLength": "{n} 文字以上で入力してください",
+    "maxLength": "{n} 文字以内で入力してください"
+  },
+  "greeting": "こんにちは、{name}！",
+  "home": {
+    "title": "ホーム",
+    "content": "ホームページへようこそ"
+  },
+  "about": {
+    "title": "概要",
+    "content": "概要ページです"
+  },
+  "button": {
+    "confirm": "確認",
+    "cancel": "キャンセル",
+    "save": "保存"
+  }
+}

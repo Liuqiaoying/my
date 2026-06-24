@@ -5,8 +5,8 @@
         {{ item.name }}</el-menu-item
       >
     </el-menu>
-    <DarkButton />
     <LanguageChange />
+    <DarkButton />
   </div>
 </template>
 

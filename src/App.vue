@@ -1,5 +1,5 @@
 <template>
-  <el-config-provider :locale="locale">
+  <el-config-provider :locale="epLocale">
     <el-container>
       <el-header><Header></Header></el-header>
       <el-container>
@@ -11,10 +11,23 @@
 </template>
 
 <script setup lang="ts">
+import { watch } from 'vue'
+import { useI18n } from 'vue-i18n'
 import { RouterView } from 'vue-router'
 import Header from './common/Header.vue'
 import { useEpLocale } from '@/composables/useEpLocale'
-const locale = useEpLocale()
+
+const { t } = useI18n()
+const epLocale = useEpLocale()
+
+// 动态设置 document.title
+watch(
+  () => t('app.title'),
+  (title) => {
+    document.title = title
+  },
+  { immediate: true },
+)
 </script>
 
 <style lang="scss" scoped>

@@ -1,7 +1,9 @@
 {
   "welcome": "Welcome",
-  "zh": "chinese",
-  "en": "english",
+  "zh": "Chinese",
+  "en": "English",
+  "ja": "Japanese",
+  "ko": "Korean",
   "app": {
     "title": "Vue 3 App",
     "description": "This is a multilingual application"
