@@ -27,8 +27,8 @@
 <script setup lang="ts">
 import { reactive, ref, watch } from 'vue'
 import { useI18n } from 'vue-i18n'
-import { ElMessage } from 'element-plus'
 import type { FormInstance, FormRules } from 'element-plus'
+import { toast } from '@/utils/toast'
 
 const { t, locale } = useI18n()
 const formRef = ref<FormInstance>()
@@ -54,7 +54,7 @@ const rules: FormRules = {
 function handleLogin() {
   formRef.value?.validate((valid) => {
     if (valid) {
-      ElMessage.success(t('login.submit'))
+      toast(t('login.submit'))
     }
   })
 }

@@ -34,5 +34,14 @@
     "confirm": "确认",
     "cancel": "取消",
     "save": "保存"
+  },
+  "user": {
+    "changePassword": "修改密码",
+    "logout": "退出登录",
+    "logoutConfirm": "确定要退出登录吗？",
+    "logoutSuccess": "已退出登录",
+    "oldPassword": "旧密码",
+    "newPassword": "新密码",
+    "passwordChanged": "密码修改成功"
   }
 }

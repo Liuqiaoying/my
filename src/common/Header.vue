@@ -7,12 +7,14 @@
     </el-menu>
     <LanguageChange />
     <DarkButton />
+    <UserDropdown />
   </div>
 </template>
 
 <script setup lang="ts">
 import DarkButton from './DarkButton.vue'
 import LanguageChange from './LanguageChange.vue'
+import UserDropdown from './UserDropdown.vue'
 const menuItems = [
   {
     name: 'Home',

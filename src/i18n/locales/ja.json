@@ -34,5 +34,14 @@
     "confirm": "確認",
     "cancel": "キャンセル",
     "save": "保存"
+  },
+  "user": {
+    "changePassword": "パスワード変更",
+    "logout": "ログアウト",
+    "logoutConfirm": "ログアウトしてもよろしいですか？",
+    "logoutSuccess": "ログアウトしました",
+    "oldPassword": "旧パスワード",
+    "newPassword": "新パスワード",
+    "passwordChanged": "パスワードを変更しました"
   }
 }

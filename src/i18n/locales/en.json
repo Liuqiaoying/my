@@ -34,5 +34,14 @@
     "confirm": "Confirm",
     "cancel": "Cancel",
     "save": "Save"
+  },
+  "user": {
+    "changePassword": "Change Password",
+    "logout": "Log Out",
+    "logoutConfirm": "Are you sure you want to log out?",
+    "logoutSuccess": "Logged out successfully",
+    "oldPassword": "Old Password",
+    "newPassword": "New Password",
+    "passwordChanged": "Password changed successfully"
   }
 }
